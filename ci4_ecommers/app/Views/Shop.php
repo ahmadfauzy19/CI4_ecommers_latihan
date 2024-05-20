@@ -34,6 +34,12 @@
                         <img src="<?= base_url('images/' . $item['gambar']) ?>" class="img-fluid product-thumbnail">
                         <h3 class="product-title"><?= $item['namaBarang']; ?></h3>
                         <strong class="product-price">Rp. <?= number_format($item['harga'], 0, ',', '.'); ?></strong>
+                        <?php if ($item['stok'] == 0) : ?>
+                            <p>stok habis</p>
+                        <?php else :  ?>
+                            <h5>stok</h5>
+                            <p><?= $item['stok']; ?></p>
+                        <?php endif; ?>
                         <span class="icon-cross">
                             <img src="<?= base_url('images/cross.svg') ?>" class="img-fluid">
                         </span>

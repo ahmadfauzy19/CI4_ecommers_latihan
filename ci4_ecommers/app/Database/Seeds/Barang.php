@@ -30,6 +30,41 @@ class Barang extends Seeder
                 'stok' => 32,
                 'gambar' => 'pensil.jpg'
             ],
+            [
+                'id_barang' => '4',
+                'namaBarang' => 'charger',
+                'harga' => 10000,
+                'stok' => 35,
+                'gambar' => 'charger.jpg'
+            ],
+            [
+                'id_barang' => '5',
+                'namaBarang' => 'Laptop',
+                'harga' => 100000,
+                'stok' => 32,
+                'gambar' => 'laptop.jpg'
+            ],
+            [
+                'id_barang' => '6',
+                'namaBarang' => 'tas',
+                'harga' => 40000,
+                'stok' => 32,
+                'gambar' => 'tas.jpg'
+            ],
+            [
+                'id_barang' => '7',
+                'namaBarang' => 'sandal',
+                'harga' => 9000,
+                'stok' => 20,
+                'gambar' => 'sandal.jpg'
+            ],
+            [
+                'id_barang' => '8',
+                'namaBarang' => 'sepatu',
+                'harga' => 45000,
+                'stok' => 40,
+                'gambar' => 'sepatu.jpg'
+            ],
         ];
 
         // Mendapatkan instance dari Database

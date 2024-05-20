@@ -49,6 +49,9 @@ class Barang extends BaseController
             // Jika barang tidak ditemukan, kembalikan respons dengan pesan error
             return view('Shop', ['message' => 'Barang tidak ditemukan']);
         }
+        if ($barang['stok'] == 0) {
+            return view('shop', ['message' => 'stok habis']);
+        }
 
         // Ambil data keranjang dari session
         $cart = $session->get('cart') ?? [];
@@ -68,7 +71,11 @@ class Barang extends BaseController
             ];
         } else {
             // Jika barang sudah ada di dalam keranjang, tambahkan kuantitasnya
-            $cart[$itemIndex]['kuantitas']++;
+            if ($barang['stok'] - $cart[$itemIndex]['kuantitas'] == -1) {
+                return redirect()->to('shop')->with('message', 'barang habis');
+            } else {
+                $cart[$itemIndex]['kuantitas']++;
+            }
         }
 
         // Simpan kembali data keranjang ke dalam session

@@ -32,21 +32,6 @@
                 <div class="col-md-6 mb-5 mb-md-0">
                     <h2 class="h3 mb-3 text-black">Billing Details</h2>
                     <div class="p-3 p-lg-5 border bg-white">
-                        <div class="form-group">
-                            <label for="c_country" class="text-black">Country <span class="text-danger">*</span></label>
-                            <select id="c_country" class="form-control">
-                                <option value="1">Select a country</option>
-                                <option value="2">bangladesh</option>
-                                <option value="3">Algeria</option>
-                                <option value="4">Afghanistan</option>
-                                <option value="5">Ghana</option>
-                                <option value="6">Albania</option>
-                                <option value="7">Bahrain</option>
-                                <option value="8">Colombia</option>
-                                <option value="9">Dominican Republic</option>
-                                <option value="10">Indonesia</option>
-                            </select>
-                        </div>
                         <div class="form-group row">
                             <div class="col-md-6">
                                 <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
@@ -97,10 +82,7 @@
                                 <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="c_order_notes" class="text-black">Order Notes</label>
-                            <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-6">
